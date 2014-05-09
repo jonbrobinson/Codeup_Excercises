@@ -26,9 +26,7 @@ if ($b >= $c) {
     echo "$b is not greater than or equal to $c\n";
 }
 
-if ($b <= $c)
-{
-    // output the appropriate result
+if ($b <= $c) {
     echo "$b is less than or equal to $c\n";
 } else {
     echo "$b is no less than or equal to $c\n";
