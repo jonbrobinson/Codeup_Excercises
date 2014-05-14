@@ -1,19 +1,27 @@
 <?php
 
-$fruits = array(
-	'apples' => 'red' ,
-	'bananas' => 'yellow' ,
-	'strawberries' => 'red', 
-	'oranges' => 'orange', 
-	'cherries' => 'red'
+$fruits = array('apples', 
+				'banana', 
+				'strawberries', 
+				'oranges', 
+				'cherries'
 );
 
-// for($i = $fruits ; $i <= 4 ; $i += 1){ 
-// 	echo ($i . PHP_EOL); 
-// }
-
-foreach($fruits as $fruit => $color){
-	if($fruit == 'apples'){
-		echo "$fruit are " . $color . PHP_EOL;
-	}
+for($i = 0 ; $i < count($fruits); $i++){ 
+	echo $fruits[$i] . PHP_EOL; 
 }
+
+
+// $fruits = array(
+// 	'apples' => 'red' ,
+// 	'bananas' => 'yellow' ,
+// 	'strawberries' => 'red', 
+// 	'oranges' => 'orange', 
+// 	'cherries' => 'red'
+// );
+
+// foreach($fruits as $fruit => $color){
+// 	if($fruit == 'apples'){
+// 		echo "$fruit are " . $color . PHP_EOL;
+// 	}
+// }
