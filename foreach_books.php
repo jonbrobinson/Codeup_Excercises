@@ -29,7 +29,6 @@ $books = array(
 
 foreach($books as $book => $title){
     echo "Book's title is $book" . PHP_EOL;
-
     foreach($title as $details => $value){
         if ($details == 'published'){
             echo "$book was $details in $value" . PHP_EOL;
