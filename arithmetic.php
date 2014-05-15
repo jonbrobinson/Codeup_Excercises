@@ -9,7 +9,7 @@ function add($a, $b){
 	echo PHP_EOL;
 }
 
-add(10,'yes');
+add(10,2);
 
 function subtract($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
@@ -19,7 +19,7 @@ function subtract($a, $b){
 	}
 	echo PHP_EOL;
 }
-subtract(10,'red');
+subtract(10,2);
 
 function multiply($a, $b){
 	 if (is_numeric($a) && is_numeric($b)){
@@ -30,18 +30,24 @@ function multiply($a, $b){
 	echo PHP_EOL;
 }
 
-multiply(10,"to");
+multiply(10,2);
+
+// Validate divide by 0 errors, diplay error if attempts to divide by 0 are made
 
 function divide($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a / $b;
+			if($b == 0){
+				echo  'Error. Unable to divide by 0';
+			} else{
+				echo $a / $b;
+			}
 	} else {
 		echo 'Error. Both $a & $b need numeric Values';
 	}
 	echo PHP_EOL;
 }
 
-divide(10,'gre');
+divide(10,'test');
 
 function modulus($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
@@ -52,4 +58,4 @@ function modulus($a, $b){
 	echo PHP_EOL;
 }
 
-modulus('no',2);
+modulus(10,2);
