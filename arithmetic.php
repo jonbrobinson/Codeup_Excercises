@@ -32,7 +32,7 @@ function subtract($a, $b){
 subtract('no',2);
 
 function multiply($a, $b){
-	 if (is_numeric($a) && is_numeric($b)){
+	if (is_numeric($a) && is_numeric($b)){
 		echo $a * $b;
 	} else {
 		error_line($a,$b);
@@ -44,18 +44,14 @@ multiply('maybe',2);
 
 function divide($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-			if($b == 0){
-				echo  "Error. Unable to divide by 0";
-			} else{
-				echo $a / $b;
-			}
+			echo ($b == 0 ? 'Error. Unable to divide by 0' : $a / $b);
 	} else {
 		error_line($a,$b);
 	}
 	echo PHP_EOL;
 }
 
-divide(10,'test');
+divide(10,0);
 
 function modulus($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
@@ -67,25 +63,3 @@ function modulus($a, $b){
 }
 
 modulus(10,'sorta');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
