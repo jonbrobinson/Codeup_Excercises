@@ -1,30 +1,55 @@
 <?php
 
 function add($a, $b){
-	echo $a + $b . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)){
+		echo $a + $b;
+	} else {
+		echo 'Error. Both $a & $b need numeric Values';
+	}
+	echo PHP_EOL;
 }
 
-add(10,2);
+add(10,'yes');
 
 function subtract($a, $b){
-	echo $a - $b . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)){
+		echo $a - $b;
+	} else {
+		echo 'Error. Both $a & $b need numeric Values';
+	}
+	echo PHP_EOL;
 }
-subtract(10,2);
+subtract(10,'red');
 
 function multiply($a, $b){
-	 echo $a * $b . PHP_EOL;
+	 if (is_numeric($a) && is_numeric($b)){
+		echo $a * $b;
+	} else {
+		echo 'Error. Both $a & $b need numeric Values';
+	}
+	echo PHP_EOL;
 }
 
-multiply(10,2);
+multiply(10,"to");
 
 function divide($a, $b){
-	echo $a / $b . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)){
+		echo $a / $b;
+	} else {
+		echo 'Error. Both $a & $b need numeric Values';
+	}
+	echo PHP_EOL;
 }
 
-divide(10,2);
+divide(10,'gre');
 
 function modulus($a, $b){
-	echo $a % $b . PHP_EOL;
+	if (is_numeric($a) && is_numeric($b)){
+		echo $a % $b;
+	} else {
+		echo 'Error. Both $a & $b need numeric Values';
+	}
+	echo PHP_EOL;
 }
 
-modulus(10,2);
+modulus('no',2);
