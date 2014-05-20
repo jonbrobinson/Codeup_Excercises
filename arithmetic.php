@@ -11,55 +11,46 @@ function error_line($a,$b){
 
 function add($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a + $b;
-	} else {
-		error_line($a,$b);
+		return $a + $b;
 	}
+	error_line($a,$b);
 	echo PHP_EOL;
 }
-
-add(10,'yes');
 
 function subtract($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a - $b;
-	} else {
-		error_line($a,$b);
+		return $a - $b;
 	}
+	error_line($a,$b);
 	echo PHP_EOL;
 }
-
-subtract('no',2);
 
 function multiply($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a * $b;
-	} else {
-		error_line($a,$b);
+		return $a * $b;
 	}
+	error_line($a,$b);
 	echo PHP_EOL;
 }
-
-multiply('maybe',2);
 
 function divide($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-			echo ($b == 0 ? 'Error. Unable to divide by 0' : $a / $b);
-	} else {
-		error_line($a,$b);
+			return ($b == 0 ? return FALSE : $a / $b);
 	}
+	error_line($a,$b);
 	echo PHP_EOL;
 }
-
-divide(10,0);
 
 function modulus($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a % $b;
-	} else {
-		error_line($a,$b);
+		return $a % $b;
 	}
+	error_line($a,$b);
 	echo PHP_EOL;
 }
 
-modulus(10,'sorta');
+echo add(10,2) . PHP_EOL;
+echo subtract(10,2) . PHP_EOL;
+echo multiply(10,2) . PHP_EOL;
+echo divide(10,0) . PHP_EOL;
+echo modulus(10,2) . PHP_EOL;
